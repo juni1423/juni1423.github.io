@@ -72,16 +72,17 @@
     <p class="meta">머지 리프트 / Merge Rift · 개발자: 인-디 (iind)</p>
   </header>
 
-  <p>머지 리프트는 회원가입 없이 플레이할 수 있습니다. 이용자가 <strong>계정 백업</strong>에서 Google 계정을 연결한 경우에만 게임 계정(Unity Authentication)과 클라우드 백업(Unity Cloud Save)이 만들어집니다. 이 페이지는 그 게임 계정과 백업을 삭제하는 방법을 안내합니다.</p>
+  <p>머지 리프트는 회원가입 없이 플레이할 수 있습니다. 앱을 실행하면 보석 잔액을 보관하는 익명 게임 계정(Unity Authentication)이 자동으로 만들어지고, 이용자가 <strong>계정 백업</strong>에서 Google 계정을 연결하면 그 계정에 게임 기록 백업(Unity Cloud Save)이 더해집니다. 이 페이지는 그 게임 계정과 백업을 삭제하는 방법을 안내합니다.</p>
 
   <section id="in-app">
     <h2>1. 앱에서 바로 삭제하기</h2>
     <ol>
       <li>머지 리프트를 열고 <strong>설정</strong>을 누릅니다.</li>
       <li><strong>계정 백업 → 관리</strong>를 누릅니다.</li>
-      <li><strong>백업 삭제</strong>를 누르고 확인 화면에서 한 번 더 <strong>백업 삭제</strong>를 누릅니다.</li>
+      <li>Google 계정을 연결했다면 <strong>백업 삭제</strong>를, 연결하지 않았다면 <strong>게임 계정 삭제</strong>를 누르고 확인 화면에서 한 번 더 누릅니다.</li>
     </ol>
-    <p>앱을 삭제했다면 다시 설치한 뒤 같은 Google 계정으로 연결하고 위 순서대로 삭제할 수 있습니다.</p>
+    <p>같은 화면에 <strong>플레이어 ID</strong>가 표시됩니다. 이메일로 요청할 때 이 값을 함께 보내 주시면 계정을 찾을 수 있습니다.</p>
+    <p>앱을 삭제했다면 다시 설치한 뒤 같은 Google 계정으로 연결하고 위 순서대로 삭제할 수 있습니다. Google 계정을 연결하지 않은 채 앱을 지우면 그 익명 게임 계정에는 다시 들어갈 수 없으므로, 삭제를 원하면 앱을 지우기 전에 위 순서로 삭제해 주세요. 이미 앱을 지웠다면 적어 둔 플레이어 ID와 함께 이메일로 요청해 주세요.</p>
   </section>
 
   <section id="email">
@@ -94,10 +95,10 @@
     <table>
       <thead><tr><th scope="col">구분</th><th scope="col">내용</th><th scope="col">처리</th></tr></thead>
       <tbody>
-        <tr><th scope="row">삭제됨</th><td data-label="내용">Unity 게임 계정(플레이어 ID와 연결된 Google 계정 식별자), Unity Cloud Save에 백업된 게임 기록과 진행 요약</td><td data-label="처리">앱에서 삭제하면 즉시 삭제합니다. 이메일 요청은 확인 후 지체 없이(늦어도 30일 이내) 삭제합니다.</td></tr>
+        <tr><th scope="row">삭제됨</th><td data-label="내용">Unity 게임 계정(플레이어 ID와 연결된 Google 계정 식별자), 그 계정의 보석 잔액과 보석을 얻고 쓴 기록, Unity Cloud Save에 백업된 게임 기록과 진행 요약. 남아 있던 보석(유료로 산 보석 포함)도 함께 사라지며 되돌릴 수 없습니다.</td><td data-label="처리">앱에서 삭제하면 즉시 삭제합니다. 이메일 요청은 확인 후 지체 없이(늦어도 30일 이내) 삭제합니다.</td></tr>
         <tr><th scope="row">기기에 남음</th><td data-label="내용">기기에 저장된 게임 진행도와 설정</td><td data-label="처리">Android 설정 → 앱 → 머지 리프트 → 저장공간 → 데이터 삭제로 직접 지울 수 있습니다.</td></tr>
         <tr><th scope="row">Google이 관리</th><td data-label="내용">Google Play 구매 내역, Google 계정 정보, 광고 관련 정보</td><td data-label="처리">Google 계정 설정과 Google의 개인정보 절차를 따릅니다. 광고 제거처럼 구매한 영구 상품은 같은 Google 계정으로 다시 설치하면 복원됩니다.</td></tr>
-        <tr><th scope="row">보관될 수 있음</th><td data-label="내용">Unity의 보안·법적 의무를 위한 기록, 운영자가 받은 문의 이메일</td><td data-label="처리">각 보관 목적에 필요한 기간 동안만 보관 후 파기합니다.</td></tr>
+        <tr><th scope="row">보관될 수 있음</th><td data-label="내용">같은 영수증의 재사용을 막기 위한 구매 검증 기록(구매 토큰의 해시·상품 ID·시각·플레이어 ID), Unity의 보안·법적 의무를 위한 기록, 운영자가 받은 문의 이메일</td><td data-label="처리">구매 검증 기록은 구매일로부터 5년, 그 밖의 기록은 각 보관 목적에 필요한 기간 동안만 보관 후 파기합니다.</td></tr>
       </tbody>
     </table>
     <p>자세한 내용은 <a href="./privacy.html">개인정보처리방침</a>을 참고해 주세요.</p>
@@ -105,7 +106,7 @@
 
   <section id="english" lang="en">
     <h2>English</h2>
-    <p><strong>Merge Rift</strong> (developer: iind) only creates a game account (Unity Authentication) and cloud backup (Unity Cloud Save) when you link a Google account in Account Backup. To delete them in the app: <strong>Settings → Account Backup → Manage → Delete Backup</strong>, then confirm. If you cannot use the app, email <a href="mailto:delody@delody.com?subject=%5BMerge%20Rift%5D%20Account%20deletion%20request">delody@delody.com</a> with the subject “Merge Rift account deletion request”; we will verify the request and delete the data within 30 days. Deleted: your Unity game account and cloud backup. Kept on your device until you clear app data: local progress and settings. Google Play purchase history is managed by Google.</p>
+    <p><strong>Merge Rift</strong> (developer: iind) creates an anonymous game account (Unity Authentication) that holds your gem balance when you open the app, and adds a cloud backup of your progress (Unity Cloud Save) when you link a Google account in Account Backup. To delete them in the app: <strong>Settings → Account Backup → Manage → Delete Backup</strong> (or <strong>Delete Game Account</strong> if you never linked Google), then confirm. The same screen shows your <strong>Player ID</strong>; include it if you email us. If you cannot use the app, email <a href="mailto:delody@delody.com?subject=%5BMerge%20Rift%5D%20Account%20deletion%20request">delody@delody.com</a> with the subject “Merge Rift account deletion request”; we will verify the request and delete the data within 30 days. Deleted: your Unity game account, its gem balance and gem records (remaining gems, including purchased ones, are lost), and your cloud backup. Kept for five years to prevent receipt reuse: a hash of each purchase token with its product ID, time and player ID. Kept on your device until you clear app data: local progress and settings. Google Play purchase history is managed by Google.</p>
   </section>
 
   <footer>
